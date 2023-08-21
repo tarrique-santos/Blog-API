@@ -1,0 +1,366 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --alinhamento: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF0F0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #A0522D;
+    width: 100%;
+    height: 14em;
+    grid-area: header;
+}
+
+header>div {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+header>div>img {
+    max-height: 45vw;
+}
+
+#menu-hamburguer {
+    width: 3rem;
+    background: #A0522D;
+    border: none;
+}
+
+#btnBorda {
+    display: none;
+    border: none;
+}
+
+#nav {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    background-color: #A0522D;
+    padding: 20px 10px;
+    grid-area: nav;
+
+}
+
+#nav>.container-fluid {
+    display: flex;
+    align-items: center;
+}
+
+#nav>.container-fluid>.navbar-brand {
+    color: #FFF0F0;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#nav>.container-fluid>.navbar-toggler {
+    border: none;
+    background-color: transparent;
+    color: #FFF0F0;
+}
+
+#nav>.container-fluid>.navbar-nav {
+    align-items: center;
+}
+
+#nav>.container-fluid>.navbar-nav>.nav-item {
+    text-decoration: none !important;
+    color: #FFF0F0;
+    font-weight: 550;
+    cursor: pointer;
+}
+
+#nav>.container-fluid>.navbar-nav>.nav-item>.nav-link {
+    color: #FFF0F0 !important;
+}
+
+#nav>.container-fluid>.navbar-nav>.nav-item>.dropdown-menu {
+    background-color: #A0522D;
+}
+
+#itemLista>.ul>.itemListaNO>.linkLista {
+    color: #FFF0F0;
+    text-decoration: none;
+}
+
+.ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center !important;
+}
+
+.ul>.itemListaNO {
+    list-style: none;
+    color: #FFF;
+}
+
+h1 , h2{
+    align-items: center;
+}
+
+select {
+    color: #A0522D;
+    background-color: #FFF0F0;
+    width: 15vw;
+    height: 4.5vh;
+    border-radius: 10px;
+    background-image: url('/img/btns e icons/angulo-para-baixo.svg');
+    background-size: 12px;
+    /* Tamanho da imagem da seta */
+    background-position: right 8px center;
+    /* Posição da imagem da seta */
+    background-repeat: no-repeat;
+}
+
+select>option {
+    background-color: #FFF0F0;
+    width: 2vw;
+}
+
+#blocoOnda,
+#onda {
+    width: 100%;
+    background-color: #A0522D;
+}
+
+.carousel-item {
+    display: flex;
+    justify-content: center;
+    background-color: #FFF0F0;
+    height: 45vh;
+}
+
+.card {
+    max-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+
+.saibaMais>svg {
+    width: 100%;
+    display: block;
+    margin-bottom: 22px;
+}
+
+.card-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #A0522D;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.saibaMais {
+    font-weight: 700;
+    font-size: 18px;
+    background-color: #A0522D;
+    color: #FFF0F0;
+    border: 1px solid #FFF0F0;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 5em;
+    margin: 0.5em;
+    display: flex;
+    width: 95%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.saibaMais:hover {
+    background-color: #FFF0F0;
+    color: #A0522D;
+}
+
+a {
+    text-decoration: none;
+}
+
+.card>img {
+    align-items: center;
+    margin-left: 2.5rem;
+    margin-top: 1.5rem;
+    max-width: 25rem;
+    max-height: 250px;
+}
+
+aside {
+    grid-area: aside;
+    background-color: #FFF0F0;
+    background-image: url("/img/Wireframe.svg");
+    width: 100%;
+    gap: 4px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 1em 0;
+}
+
+.cxTexto {
+    display: flex;
+    justify-content: end;
+}
+
+#footer {
+    grid-area: footer;
+    background-color: #A0522D;
+    height: 18vh;
+    width: 100%;
+    padding-bottom: 2vh;
+
+}
+
+#footer>ul {
+    font-family: Boardwalk Condensed;
+    list-style: none;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#footer>ul>li {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+#footer>ul>li>img,
+#footer>ul>a>li>img {
+    height: 3vh;
+}
+
+#footer>ul>a> {
+    text-decoration: none;
+
+}
+
+#imgFooter {
+    width: 100%;
+    height: 15em;
+    background-color: #A0522D;
+}
+
+#imgFooter>img {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    background-color: #A0522D;
+}
+
+/* ... mantenha o restante do código CSS como está ... */
+
+@media (max-width: 600px) {
+    #nav>.container-fluid>.navbar-nav {
+        display: none;
+        /* Oculta os itens do menu normal */
+        flex-direction: column;
+        /* Alinha os itens verticalmente */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+        background-color: #A0522D;
+        /* Define a cor de fundo do menu hamburguer */
+    }
+
+    #nav>.container-fluid>.navbar-nav>.nav-item {
+        padding: 10px;
+    }
+
+    .card {
+        width: 75vw;
+    }
+
+    #itemLista {
+        display: none;
+    }
+
+    .btnBorda,
+    #menu-hamburguer {
+        display: block;
+    }
+
+    #btnBorda {
+        display: block;
+        /* Exibe o botão do menu hamburguer */
+    }
+}
+
+#modal{
+    background-color: #A0522D;
+    width: 95vw;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    margin-left: 2.5vw;
+    margin-top: 10vh;
+    padding: 2.5vw 0;
+    flex-wrap: wrap;
+}
+
+#modal-description{
+    color: #E2E2E2;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+#cxh6 > h6{
+    color: #E2E2E2;
+
+}
+
+#modal > h2{
+    padding-top: 5%;
+    text-align: center;
+}
+
+#modal-title{
+    color: #E2E2E2;
+    font-size: 26px;
+    font-weight: 700;
+    padding: 0 10px 10px;
+}
+
+#cxh6{
+    width: 35vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#imgPost{
+    max-width: 35vw;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.modalImg {
+    max-width: 35vw;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
